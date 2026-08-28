@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal | Hrituraj Deb</title>
+<meta name="description" content="Beyond the code — hobbies, travel, and everyday life of Hrituraj Deb.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style-personal.css">
+</head>
+<body>
+
+<div class="scroll-progress"><div class="scroll-progress-fill" id="scrollFill"></div></div>
+
+<div class="wipe-overlay" id="wipeOverlay">
+  <div class="wipe-panel"></div><div class="wipe-panel"></div><div class="wipe-panel"></div><div class="wipe-panel"></div><div class="wipe-panel"></div>
+</div>
+
+<!-- ===================== FIREFLY NAV ===================== -->
+<div class="cnav-wrap pop-in">
+  <div class="cnav-container">
+    <canvas id="fireflies-canvas"></canvas>
+    <nav class="cnav">
+      <a href="professional.html" data-transition>Professional</a>
+      <a href="personal.html" class="active">Personal</a>
+      <a href="contact.html" data-transition>Contact</a>
+    </nav>
+  </div>
+</div>
+
+<nav class="cnav-float" id="cnavFloat">
+  <a href="professional.html" data-transition>Professional</a>
+  <a href="personal.html" class="active">Personal</a>
+  <a href="contact.html" data-transition>Contact</a>
+</nav>
+
+<!-- ===================== NICKNAME HERO ===================== -->
+<section class="nick-hero pop-in">
+  <p class="chero-label">BEYOND THE CODE</p>
+  <p class="nick-greeting">Hello again?</p>
+  <div class="nick-row">
+    My nickname is
+    <span class="nick-box">
+      <span class="nick-corner tl"></span><span class="nick-corner tr"></span>
+      <span class="nick-corner bl"></span><span class="nick-corner br"></span>
+      Parta
+    </span>
+  </div>
+
+  <p class="nick-blurb">Parta means<span class="blur-word" id="blurWord">"The one who belongs to earth"</span></p>
+  <p class="nick-love">Built this website with love ❤️ 🍕 🚀</p>
+</section>
+
+<!-- ===================== COMPONENTS OF LIFE ===================== -->
+<section class="csection pop-in" style="padding-top:0;">
+  <h2 class="csection-heading">Components of Parta's Life</h2>
+  <p class="csection-sub">I like to stay active. New hobbies are added almost every year.</p>
+
+  <div class="life-grid">
+    <!-- Card 1: Explorer -->
+    <div class="life-card-glow">
+      <div class="life-card-inner">
+        <div class="life-card-title">Explorer of the Hills</div>
+        <div class="life-card-desc">Backroads, hills, and quiet towns around Agartala. Exploring places helps me explore myself.</div>
+        <div class="photo-pair">
+          <div class="photo-slot">
+            <div class="photo-slot-placeholder">
+              <img src="IMAGES/Photo1.jpg" alt="Sikkim Dairies">
+            </div>
+          </div>
+          <div class="photo-slot">
+            <div class="photo-slot-placeholder">
+              <img src="IMAGES/Photo2.jpg" alt="Shiliong Dairies">
+            </div>
+          </div>
+          <div class="photo-slot">
+            <div class="photo-slot-placeholder">
+              <img src="IMAGES/Photo3.jpg" alt="Shiliong Dairies">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Moments -->
+    <div class="life-card-glow">
+      <div class="life-card-inner">
+        <div class="life-card-title">Moments Between the Noise</div>
+        <div class="life-card-desc">Music, movies, shows — the worlds we escape into shape who we become.</div>
+        <p class="life-quote">"The only way to do great work is to love what you do."</p>
+        <div class="collage-grid">
+          <div class="collage-item"><img src="IMAGES/Doom.jpeg"></div>
+          <div class="collage-item"><img src="IMAGES/death.jpeg"></div>
+          <div class="collage-item"><img src="IMAGES/Strange.jpeg"></div>
+          <div class="collage-item"><img src="IMAGES/alice.jpeg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="life-grid-2">
+    <!-- Instagram Reel Slot -->
+    <!-- Instagram Reel Slot with Blurred Image Background -->
+    <a href="https://www.instagram.com/reel/DbbTIzyvBBQ/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==" target="_blank" rel="noopener" class="ig-photo-slot">
+      <!-- Blurred Background Image Container -->
+      <div class="ig-bg-blur">
+        <img src="IMAGES/InstaCover.jpg" alt="Instagram Reel Preview">
+      </div>
+      <div class="ig-bg-overlay"></div>
+
+      <!-- Foreground Interactive Elements -->
+      <div class="ig-content">
+        <span class="ig-subheading">Content Creation</span>
+        <div class="ig-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="2.5" y="2.5" width="19" height="19" rx="5"/>
+            <circle cx="12" cy="12" r="4.3"/>
+            <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <span class="ig-tap-label">TAP TO WATCH REEL</span>
+      </div>
+    </a>
+
+    <!-- Dream of Becoming: 3D Point-Cloud Sphere -->
+    <div class="life-card-glow dream-sphere-card">
+      <div class="life-card-inner center-content">
+        <div class="life-card-title" style="text-align:center;">Dream of Becoming...</div>
+        <div class="life-card-desc" style="text-align:center;">Currently exploring AI models, systems, and deep software craft ¯\_(ツ)_/¯</div>
+        
+        <div class="sphere-wrap">
+          <canvas id="globeCanvas" width="220" height="220"></canvas>
+          <div class="sphere-glow-backdrop"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HORIZONTAL SCROLL CARDS ===================== -->
+<section class="csection scroll-section pop-in" style="padding-top:0;">
+  <div class="scroll-row">
+    <div class="scroll-card">
+      <img src="IMAGES/Scroll1.png" alt="Computer & IT Background" class="scroll-card-bg">
+      <div class="scroll-card-content">
+        <span class="scroll-card-tag">Evolution</span>
+        <div class="scroll-card-title">Computer &amp; IT</div>
+      </div>
+    </div>
+    
+    <div class="scroll-card">
+      <img src="IMAGES/Scroll2.png" alt="Exploring & Adventure Background" class="scroll-card-bg">
+      <div class="scroll-card-content">
+        <span class="scroll-card-tag">Lifestyle</span>
+        <div class="scroll-card-title">Exploring &amp; Adventure</div>
+      </div>
+    </div>
+    
+    <div class="scroll-card">
+      <img src="IMAGES/Scroll3.png" alt="Languages & Expression Background" class="scroll-card-bg">
+      <div class="scroll-card-content">
+        <span class="scroll-card-tag">Communication</span>
+        <div class="scroll-card-title">Languages &amp; Expression</div>
+      </div>
+    </div>
+    
+    <div class="scroll-card">
+      <img src="IMAGES/Scroll4.png" alt="Music & Aesthetics Background" class="scroll-card-bg">
+      <div class="scroll-card-content">
+        <span class="scroll-card-tag">Creativity</span>
+        <div class="scroll-card-title">Music &amp; Aesthetics</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ROUTINE / PLANS / MUSIC ===================== -->
+<section class="csection pop-in" style="padding-top:0;">
+  <div class="life-utility-grid">
+    <!-- Routine -->
+    <div class="life-card-glow">
+      <div class="life-card-inner utility-inner">
+        <div class="routine-title">Daily routine <span>⏱</span></div>
+        <div class="routine-list">
+          <div><div class="routine-time">7:00 AM</div><div class="routine-label">Wake up &amp; 1 Charak Chai</div></div>
+          <div><div class="routine-time">8:00 AM - 9:30 AM</div><div class="routine-label">Prepairing Meals &amp; Shower</div></div>
+          <div><div class="routine-time">10:00 AM - 4:00 PM</div><div class="routine-label">Development &amp; AI Research</div></div>
+          <div><div class="routine-time">6:30 PM</div><div class="routine-label">Leisure &amp; Creative Time</div></div>
+          <div><div class="routine-time">9:00 PM</div><div class="routine-label">Music &amp; Exploration</div></div>
+          <div><div class="routine-time">11:00 PM</div><div class="routine-label">Wrap up &amp; Deep Sleep</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Future Plans -->
+    <div class="life-card-glow">
+      <div class="life-card-inner utility-inner">
+        <div class="routine-title">Future plan <span>🎯</span></div>
+        <ul class="plan-list">
+          <li>Graduation with Masters</li>
+          <li>Exploring the hidden natural gems of India</li>
+          <li>Deploying my own search engine</li>
+          <li>Master crafting skill</li>
+          <li>Make family &amp; peers proud</li>
+          <li>May be a trip to Morocco... who knows 🥱</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Cosmic Vinyl Music Player Card -->
+    <div class="life-card-glow music-bento-card">
+      <div class="life-card-inner utility-inner music-player-v2">
+        <audio id="portfolioAudio" src="Be Intehaan_320(KoshalWorld.Com).mp3" preload="metadata"></audio>
+
+        <!-- Top Header & Live Status Badge -->
+        <div class="music-top-bar">
+          <span class="music-kicker">FAVORITE TRACK</span>
+          <span class="music-badge" id="musicStatusBadge">
+            <span class="music-pulse-dot"></span> Paused
+          </span>
+        </div>
+
+        <!-- Center Showcase: Rotating Vinyl & Track Meta -->
+        <div class="music-showcase">
+          <div class="vinyl-disc-wrap" id="vinylWrap">
+            <div class="vinyl-disc">
+              <div class="vinyl-groove g1"></div>
+              <div class="vinyl-groove g2"></div>
+              <div class="vinyl-groove g3"></div>
+              <div class="vinyl-center">
+                <div class="vinyl-label">
+                  <span>Race 2</span>
+                </div>
+                <div class="vinyl-hole"></div>
+              </div>
+            </div>
+            <div class="vinyl-glow"></div>
+          </div>
+
+          <div class="music-track-info">
+            <h3 class="music-player-title">Be Intehaan</h3>
+            <p class="music-player-sub">Atif Aslam &amp; Sunidhi Chauhan</p>
+            <span class="music-album-tag">Race 2 Soundtrack</span>
+          </div>
+        </div>
+
+        <!-- Animated Audio Spectrum Visualizer -->
+        <div class="music-spectrum" id="musicWave"></div>
+
+        <!-- Progress Timeline & Scrub Bar -->
+        <div class="music-progress-wrap">
+          <span class="music-time" id="musicCurrentTime">0:00</span>
+          <div class="music-progress-bar" id="musicProgressBar">
+            <div class="music-progress-fill" id="musicProgressFill"></div>
+            <div class="music-progress-handle" id="musicProgressHandle"></div>
+          </div>
+          <span class="music-time" id="musicDuration">0:00</span>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="music-controls">
+          <button type="button" class="m-ctrl-btn" id="prevTrackBtn" aria-label="Rewind 10s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-9-7 9-7v14zM22 19l-9-7 9-7v14z"/></svg>
+          </button>
+          
+          <button type="button" class="m-play-btn" aria-label="Play Track" id="playBtn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          
+          <button type="button" class="m-ctrl-btn" id="nextTrackBtn" aria-label="Forward 10s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l9 7-9 7V5zM2 5l9 7-9 7V5z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL THANKS ===================== -->
+<section class="final-thanks pop-in">
+  <p class="final-thanks-label">For visiting my profile</p>
+  <div class="thankyou-block">
+    <!-- Animated Drifting Cloud Layers -->
+    <div class="clouds-backdrop" aria-hidden="true">
+      <div class="cloud-layer cloud-layer-back"></div>
+      <div class="cloud-layer cloud-layer-mid"></div>
+      <div class="cloud-layer cloud-layer-front"></div>
+    </div>
+
+    <!-- Thank You Text Content -->
+    <p class="thankyou-text">Thank you.</p>
+  </div>
+  <div style="margin-top:24px;">
+    <a href="contact.html" class="cbtn" data-transition>Let's Get In Touch &gt;</a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="cfooter pop-in">
+  <span class="cfooter-name">Hrituraj Deb</span>
+  <div class="cfooter-socials">
+    <a href="https://www.instagram.com/inclined__soul?utm_source=qr&igsh=NzVuamp5dzZkOHFp" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.3"/></svg></a>
+    <a href="https://www.linkedin.com/in/hrituraj-deb-16aa7535a/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+    <a href="https://github.com/Devil1867" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+    <a href="mailto:debhrituraj621@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg></a>
+  </div>
+</footer>
+
+<script src="clone-shared.js"></script>
+<script>
+  /* Fireflies on Nav Canvas */
+  (function initFireflies() {
+    const canvas = document.getElementById('fireflies-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    
+    function resize() {
+      width = canvas.width = canvas.parentElement.offsetWidth;
+      height = canvas.height = canvas.parentElement.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    const colors = ['#3dff9a', '#00d2ff', '#a56cff', '#ffec3d'];
+    const particles = Array.from({ length: 18 }, () => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      vx: (Math.random() - 0.5) * 0.8,
+      vy: (Math.random() - 0.5) * 0.8,
+      size: Math.random() * 2 + 1,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      alpha: Math.random()
+    }));
+
+    function loop() {
+      ctx.clearRect(0, 0, width, height);
+      particles.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        p.alpha += (Math.random() - 0.5) * 0.05;
+        if (p.alpha < 0.2) p.alpha = 0.2;
+        if (p.alpha > 1) p.alpha = 1;
+        if (p.x < 0) p.x = width;
+        if (p.x > width) p.x = 0;
+        if (p.y < 0) p.y = height;
+        if (p.y > height) p.y = 0;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fillStyle = p.color;
+        ctx.globalAlpha = p.alpha;
+        ctx.shadowBlur = 8;
+        ctx.shadowColor = p.color;
+        ctx.fill();
+      });
+      requestAnimationFrame(loop);
+    }
+    loop();
+  })();
+
+  /* Click to Reveal Word */
+  const blurWord = document.getElementById('blurWord');
+  if (blurWord){
+    blurWord.addEventListener('click', () => blurWord.classList.toggle('revealed'));
+  }
+  /* 3. Audio Engine & Turntable Controller */
+  const wave = document.getElementById('musicWave');
+  if (wave && wave.children.length === 0) {
+    for (let i = 0; i < 32; i++) {
+      const bar = document.createElement('span');
+      wave.appendChild(bar);
+    }
+  }
+
+  const audio = document.getElementById('portfolioAudio');
+  const playBtn = document.getElementById('playBtn');
+  const vinylWrap = document.getElementById('vinylWrap');
+  const vinylDisc = vinylWrap?.querySelector('.vinyl-disc');
+  const statusBadge = document.getElementById('musicStatusBadge');
+  const progressFill = document.getElementById('musicProgressFill');
+  const progressBar = document.getElementById('musicProgressBar');
+  const currentTimeEl = document.getElementById('musicCurrentTime');
+  const durationEl = document.getElementById('musicDuration');
+  const prevBtn = document.getElementById('prevTrackBtn');
+  const nextBtn = document.getElementById('nextTrackBtn');
+
+  function formatTime(seconds) {
+    if (isNaN(seconds)) return '0:00';
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+  }
+
+  function setPlaybackVisuals(isPlaying) {
+    if (!playBtn) return;
+    
+    // Animate Equalizer Bars
+    if (wave) {
+      [...wave.children].forEach(bar => {
+        bar.style.animationPlayState = isPlaying ? 'running' : 'paused';
+      });
+    }
+
+    // Spin Vinyl Disc & Glow
+    if (vinylDisc) {
+      vinylDisc.style.animationPlayState = isPlaying ? 'running' : 'paused';
+    }
+    if (vinylWrap) {
+      vinylWrap.classList.toggle('playing', isPlaying);
+    }
+
+    // Toggle Badge
+    if (statusBadge) {
+      statusBadge.classList.toggle('playing', isPlaying);
+      statusBadge.innerHTML = isPlaying 
+        ? '<span class="music-pulse-dot"></span> Playing' 
+        : '<span class="music-pulse-dot"></span> Paused';
+    }
+
+    // Switch Play / Pause Icon
+    playBtn.innerHTML = isPlaying
+      ? '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>'
+      : '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+  }
+
+  if (audio && playBtn) {
+    playBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play().then(() => setPlaybackVisuals(true)).catch(console.error);
+      } else {
+        audio.pause();
+        setPlaybackVisuals(false);
+      }
+    });
+
+    audio.addEventListener('loadedmetadata', () => {
+      if (durationEl) durationEl.textContent = formatTime(audio.duration);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      if (!audio.duration) return;
+      const pct = (audio.currentTime / audio.duration) * 100;
+      if (progressFill) progressFill.style.width = pct + '%';
+      if (currentTimeEl) currentTimeEl.textContent = formatTime(audio.currentTime);
+    });
+
+    audio.addEventListener('ended', () => {
+      setPlaybackVisuals(false);
+      if (progressFill) progressFill.style.width = '0%';
+      if (currentTimeEl) currentTimeEl.textContent = '0:00';
+    });
+
+    if (progressBar) {
+      progressBar.addEventListener('click', (e) => {
+        const rect = progressBar.getBoundingClientRect();
+        const clickRatio = (e.clientX - rect.left) / rect.width;
+        audio.currentTime = clickRatio * audio.duration;
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        audio.currentTime = Math.max(0, audio.currentTime - 10);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        audio.currentTime = Math.min(audio.duration, audio.currentTime + 10);
+      });
+    }
+  }
+
+  /* Scroll Progress & Floating Nav */
+  const scrollFill = document.getElementById('scrollFill');
+  const cnavFloat = document.getElementById('cnavFloat');
+  window.addEventListener('scroll', () => {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+    if (scrollFill) scrollFill.style.height = pct + '%';
+    if (cnavFloat) cnavFloat.classList.toggle('visible', window.scrollY > 300);
+  }, { passive:true });
+
+  /* Pop-in Observer */
+  const popEls = document.querySelectorAll('.pop-in');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    popEls.forEach(el => io.observe(el));
+  } else {
+    popEls.forEach(el => el.classList.add('in-view'));
+  }
+/* 3D Dotted Point-Cloud Sphere Engine */
+  (function init3DGlobe() {
+    const canvas = document.getElementById('globeCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    
+    const size = 220;
+    canvas.width = size * window.devicePixelRatio;
+    canvas.height = size * window.devicePixelRatio;
+    ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+
+    const radius = 80;
+    const points = [];
+    const numRings = 16;
+    const dotsPerRing = 48;
+
+    // Generate UV Sphere Latitude & Longitude Dot Coordinates
+    for (let i = 0; i < numRings; i++) {
+      const phi = (Math.PI * (i + 1)) / (numRings + 1);
+      const y = radius * Math.cos(phi);
+      const ringRadius = radius * Math.sin(phi);
+
+      for (let j = 0; j < dotsPerRing; j++) {
+        const theta = (2 * Math.PI * j) / dotsPerRing;
+        const x = ringRadius * Math.sin(theta);
+        const z = ringRadius * Math.cos(theta);
+        points.push({ x, y, z });
+      }
+    }
+
+    // Include Poles
+    points.push({ x: 0, y: radius, z: 0 });
+    points.push({ x: 0, y: -radius, z: 0 });
+
+    let rotY = 0;
+    const tiltX = 0.35; // Tilt axis forward
+    const tiltZ = -0.25; // Subtle diagonal lean
+
+    function project(p, angleY) {
+      // Rotate around Y axis
+      const cosY = Math.cos(angleY);
+      const sinY = Math.sin(angleY);
+      let x1 = p.x * cosY + p.z * sinY;
+      let y1 = p.y;
+      let z1 = -p.x * sinY + p.z * cosY;
+
+      // Fixed Tilt on X
+      const cosX = Math.cos(tiltX);
+      const sinX = Math.sin(tiltX);
+      let y2 = y1 * cosX - z1 * sinX;
+      let z2 = y1 * sinX + z1 * cosX;
+
+      // Fixed Tilt on Z
+      const cosZ = Math.cos(tiltZ);
+      const sinZ = Math.sin(tiltZ);
+      let x3 = x1 * cosZ - y2 * sinZ;
+      let y3 = x1 * sinZ + y2 * cosZ;
+
+      // Perspective projection
+      const fov = 260;
+      const scale = fov / (fov + z2);
+      const projX = size / 2 + x3 * scale;
+      const projY = size / 2 + y3 * scale;
+      
+      // Depth shading (brighter in front, dim in back)
+      const alpha = Math.max(0.12, (z2 + radius) / (2 * radius));
+
+      return { x: projX, y: projY, scale, alpha, z: z2 };
+    }
+
+    function render() {
+      ctx.clearRect(0, 0, size, size);
+      rotY += 0.007; // Rotation speed
+
+      const projected = points.map(p => project(p, rotY));
+
+      // Sort points by depth so front dots render cleanly
+      projected.sort((a, b) => a.z - b.z);
+
+      projected.forEach(p => {
+        ctx.beginPath();
+        const dotSize = Math.max(0.6, p.scale * 1.35);
+        ctx.arc(p.x, p.y, dotSize, 0, Math.PI * 2);
+        
+        // Cyan-emerald glowing points
+        ctx.fillStyle = `rgba(180, 240, 255, ${p.alpha})`;
+        ctx.shadowBlur = p.alpha > 0.6 ? 4 : 0;
+        ctx.shadowColor = '#00d2ff';
+        ctx.fill();
+      });
+
+      requestAnimationFrame(render);
+    }
+    render();
+  })();
+</script>
+</body>
+</html>
