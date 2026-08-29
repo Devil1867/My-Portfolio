@@ -1332,3 +1332,89 @@ img { max-width: 100%; display: block; }
     box-shadow: 0 0 2px rgba(61, 255, 154, 0.2);
   }
 }
+/* ===================== 1. PREVENT ANY HORIZONTAL OVERFLOW ===================== */
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  position: relative;
+}
+
+/* ===================== 2. FIX SCROLL PROGRESS BAR ===================== */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  right: 4px; /* Locked close to the real mobile edge */
+  width: 3px;
+  height: 100vh;
+  z-index: 200;
+  pointer-events: none;
+}
+
+/* ===================== 3. CONTAIN 3D LAPTOP OVERFLOW ===================== */
+.sp-card-laptop {
+  overflow: hidden !important; /* Prevent floating chips and 106% base from bleeding out */
+}
+
+.sp-laptop-base {
+  width: 100% !important; /* Clamped from 106% to prevent right-edge spill */
+}
+
+.sp-laptop-graphic {
+  max-width: 100%;
+}
+
+/* ===================== 4. CONTAIN ROTATING GLOW BORDERS ===================== */
+.exp-card2 {
+  position: relative;
+  overflow: hidden !important; /* Contain pseudo-element rotated glow */
+}
+
+/* ===================== 5. MOBILE RESPONSIVE TWEAKS ===================== */
+@media (max-width: 768px) {
+  .csection {
+    padding: 60px 16px;
+  }
+
+  .chero {
+    padding: 70px 16px 40px;
+  }
+
+  .cstats {
+    padding: 20px 16px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .sp-bento-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .sp-activity-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .sp-laptop-3d-wrap {
+    width: 100%;
+    transform: none !important; /* Disable 3D tilt on mobile for clean screen fit */
+  }
+
+  .sp-float-tool, .sp-float-chip {
+    display: none; /* Hide floating corner chips on mobile to prevent layout blowout */
+  }
+
+  .proj-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .exp-grid2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
