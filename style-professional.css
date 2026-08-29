@@ -130,24 +130,40 @@ img { max-width: 100%; display: block; }
   box-shadow: inset 0 0 12px rgba(61, 255, 154, 0.2);
 }
 
+/* ===================== FIXED FLOATING NAV ===================== */
 .cnav-float {
-  position: fixed;
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%) translateY(20px);
+  position: fixed !important;
+  bottom: 24px;
+  left: 50% !important;
+  /* Use fixed translation on both X and Y so scrolling transitions don't reset X */
+  transform: translate3d(-50%, 40px, 0);
   opacity: 0;
   pointer-events: none;
-  z-index: 150;
-  transition: opacity .3s ease, transform .3s ease;
+  z-index: 9999;
+  
   display: flex;
-  gap: 6px;
-  background: rgba(5, 13, 26, 0.85);
-  backdrop-filter: blur(14px);
-  border: 1px solid var(--line-bright);
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: rgba(14, 23, 38, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--line-bright, rgba(255, 255, 255, 0.12));
   border-radius: 999px;
-  padding: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  
+  /* Transition both opacity and transform simultaneously without jumping */
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
 }
-.cnav-float.visible { opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto; }
+
+/* Active Visible State */
+.cnav-float.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate3d(-50%, 0, 0) !important;
+}
 .cnav-float a {
   font-size: 13px;
   padding: 8px 20px;
