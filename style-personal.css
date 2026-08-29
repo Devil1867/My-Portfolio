@@ -1134,3 +1134,57 @@ img { max-width: 100%; display: block; }
   .collage-grid { grid-template-columns: 1fr 1fr; }
   .cfooter { justify-content: center; text-align: center; }
 }
+* ===================== FLOATING SCROLL INDICATOR ===================== */
+.scroll-indicator-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px auto 30px;
+  opacity: 0.85;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.scroll-cue-text {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(61, 255, 154, 0.4);
+}
+
+.scroll-mouse {
+  width: 18px;
+  height: 28px;
+  border-radius: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-wheel {
+  width: 4px;
+  height: 7px;
+  background: var(--accent);
+  border-radius: 2px;
+  position: absolute;
+  top: 5px;
+  animation: mouse-wheel-drop 1.6s ease-in-out infinite;
+  box-shadow: 0 0 6px var(--accent);
+}
+
+@keyframes mouse-wheel-drop {
+  0% { transform: translateY(0); opacity: 1; }
+  60% { transform: translateY(8px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 0; }
+}
+
+/* Auto fade-out indicator once user begins scrolling */
+body.has-scrolled .scroll-indicator-wrap {
+  opacity: 0;
+  transform: translateY(-8px);
+}
