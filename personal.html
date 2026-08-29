@@ -53,7 +53,13 @@
   <p class="nick-blurb">Parta means<span class="blur-word" id="blurWord">"The one who belongs to earth"</span></p>
   <p class="nick-love">Built this website with love ❤️ 🍕 🚀</p>
 </section>
-
+<!-- Scroll Cue -->
+  <div class="scroll-indicator-wrap" id="scrollCue">
+    <span class="scroll-cue-text">SCROLL TO EXPLORE</span>
+    <div class="scroll-mouse">
+      <div class="scroll-wheel"></div>
+    </div>
+  </div>
 <!-- ===================== COMPONENTS OF LIFE ===================== -->
 <section class="csection pop-in" style="padding-top:0;">
   <h2 class="csection-heading">Components of Parta's Life</h2>
@@ -475,7 +481,7 @@
     }
   }
 
-  /* Scroll Progress & Floating Nav */
+  /* Scroll Progress, Floating Nav & Scroll Cue Toggle */
   const scrollFill = document.getElementById('scrollFill');
   const cnavFloat = document.getElementById('cnavFloat');
   window.addEventListener('scroll', () => {
@@ -483,10 +489,18 @@
     const pct = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
     if (scrollFill) scrollFill.style.height = pct + '%';
     if (cnavFloat) cnavFloat.classList.toggle('visible', window.scrollY > 300);
+    
+    // Auto fade-out the scroll cue
+    if (window.scrollY > 40) {
+      document.body.classList.add('has-scrolled');
+    } else {
+      document.body.classList.remove('has-scrolled');
+    }
   }, { passive:true });
 
-  /* Pop-in Observer */
+  /* 5. Smooth Section Pop-in Observer with Immediate Mount Trigger */
   const popEls = document.querySelectorAll('.pop-in');
+
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -495,8 +509,24 @@
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1 });
+    }, {
+      root: null,
+      // Pre-triggers elements within 80px of entering the bottom of the viewport
+      rootMargin: '0px 0px 80px 0px',
+      threshold: 0.05
+    });
+
     popEls.forEach(el => io.observe(el));
+
+    // Force an immediate evaluation on DOM load & first frame render
+    window.addEventListener('DOMContentLoaded', () => {
+      popEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight + 100) {
+          el.classList.add('in-view');
+        }
+      });
+    });
   } else {
     popEls.forEach(el => el.classList.add('in-view'));
   }
