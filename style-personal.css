@@ -1134,7 +1134,19 @@ img { max-width: 100%; display: block; }
   .collage-grid { grid-template-columns: 1fr 1fr; }
   .cfooter { justify-content: center; text-align: center; }
 }
-* ===================== FLOATING SCROLL INDICATOR ===================== */
+/* ===================== POP-IN REVEAL REFINEMENTS ===================== */
+.pop-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.pop-in.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ===================== FLOATING SCROLL INDICATOR ===================== */
 .scroll-indicator-wrap {
   display: flex;
   flex-direction: column;
